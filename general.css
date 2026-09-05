@@ -1,0 +1,101 @@
+
+/*базовые настройки*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar { width: 0;}
+
+::selection {
+    background-color: rgb(110,47,59);
+    color: white;
+}
+
+header, .nav, footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*основной контент*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 100px;
+    background-color: rgb(253,217,120);
+    font-size: 38px;
+    color: rgb(128,172,170);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(72, 63, 49);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.current {
+    background-color: rgb(96,85,66);
+}
+
+main {
+    flex: 1;
+    background-color: rgb(96,85,66);
+}
+
+footer {
+    padding: 5px;
+    background-color: rgb(21,21,21);
+    color: rgb(72, 62, 35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ссылки*/
+
+h1:hover {
+    cursor: default;
+    transform: rotate(180deg);
+}
+
+.btn:link {
+    text-decoration: none;
+    color: rgb(253,217,120);
+}
+
+.btn:visited {
+    color: rgb(253,217,120);
+}
+
+.btn:hover {
+    background-color: rgb(112, 99, 77);
+    color: rgb(253,217,120);
+}
