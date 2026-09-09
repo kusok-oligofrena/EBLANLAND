@@ -46,7 +46,7 @@ header {
 
     .title {
         color: var(--accent);
-        font-size: 2.5em;
+        font-size: 3.5em;
         padding: 10px;
         font-family: Archivo Black, sans-serif;
     }
@@ -64,6 +64,7 @@ header {
         padding: 0.2em;
         flex: 1;
         text-decoration: none;
+        font-size: 1.3em;
 
         display: flex;
         justify-content: center;
@@ -73,8 +74,8 @@ header {
     .current {
         color: var(--accent);
         background-color: var(--container);
-        font-size: 1.3em;
-        border-top: 2px solid var(--accent);
+        font-size: 1.6em;
+        border-top: 3px solid var(--accent);
     }
 
 main {
@@ -89,9 +90,17 @@ main {
     С айфона сайт не смотреть сука!!!
 */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     nav {
         width: 100vw;
+    }
+
+    .btn {
+        font-size: 1.3em
+    }
+
+    .current {
+        font-size: 1.5em;
     }
 
     main {
@@ -112,7 +121,7 @@ main {
 
 .current:hover {
     color: var(--accent-dark);
-    border-top: 2px solid var(--accent-dark);
+    border-top: 3px solid var(--accent-dark);
     text-decoration: none;
     transition: 0.3s;
 }
