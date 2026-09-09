@@ -1,0 +1,69 @@
+/*
+    Цвета которые я выбирал под мефедроном:
+    --accent: rgb(240, 165, 0);
+    --accent-dark: rgb(191, 131, 0);
+    --text: rgb(211, 211, 211);
+    --text-dark: rgb(21, 21, 21);
+    --bg: rgb(67, 67, 67);
+    --container: rgb(50, 50, 50);
+    --container-dark: rgb(43, 43, 43);
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    padding: 1em;
+}
+
+.post {
+    text-decoration: none;
+    background-color: var(--container-dark);
+    width: 80%;
+    border-top: 2px solid var(--accent);
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+    .post img {
+        width: 100%;
+    }
+
+    .post-title {
+        font-weight: 700;
+        font-size: 1.2em;
+        color: var(--accent);
+    }
+
+    .post-description {
+        color: var(--text);
+    }
+
+/*
+    Еще раз. Это произошло во время прослушивания группы ultra vomit
+*/
+
+@media (max-width: 700px) {
+    main {
+        padding: 1em 0em;
+    }
+
+    .post {
+        width: 100vw;
+    }
+}
+
+/*
+    И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ
+*/
+
+.post:hover {
+    background-color: var(--bg);
+    transition: 0.3s;
+}
