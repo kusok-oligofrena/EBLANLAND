@@ -5,6 +5,7 @@
     --text: rgb(211, 211, 211);
     --text-dark: rgb(21, 21, 21);
     --bg: rgb(67, 67, 67);
+    --bg-dark: rgb(57, 57, 57);
     --container: rgb(50, 50, 50);
     --container-dark: rgb(43, 43, 43);
 */
@@ -44,31 +45,29 @@ main {
     .post-description {
         color: var(--text);
         font-size: 1.3em;
+        font-weight: 400;
     }
 
 /*
     Еще раз. Это произошло во время прослушивания группы ultra vomit
 */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     main {
-        padding: 1em 0em;
-    }
-
-    .title {
-        font-size: 3.0em
+        padding: 1em 0;
     }
 
     .post {
         width: 100vw;
+        padding: 1em;
     }
 
     .post-title {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .post-description {
-        font-size: 1.2em
+        font-size: 1.1em
     }
 }
 
@@ -76,7 +75,10 @@ main {
     И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ И ВРЕМЕНИ БОЛЬШЕ НЕ БУДЕТ
 */
 
-.post:hover {
-    background-color: var(--bg);
-    transition: 0.3s;
+@media (min-width: 900px) {
+    .post:hover {
+        background-color: var(--bg-dark);
+        transition: 0.3s;
+    }
 }
+
