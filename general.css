@@ -15,6 +15,7 @@
 :root {
     --accent: rgb(240, 165, 0);
     --accent-dark: rgb(191, 131, 0);
+    --accent-very-dark: rgb(70, 48, 0);
     --text: rgb(211, 211, 211);
     --text-dark: rgb(21, 21, 21);
     --bg: rgb(67, 67, 67);

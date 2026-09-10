@@ -1,0 +1,53 @@
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-number {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+}
+
+.post-title {
+    align-self: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.step-btn {
+    background-color: var(--accent);
+    font-size: 1.5em;
+    align-self: center;
+    text-align: center;
+    color: var(--container-dark);
+    padding: 0.2em;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.step-btn:hover {
+    cursor: pointer;
+}
+
+.post:hover {
+    cursor: default;
+}
+
+@media (max-width: 900px) {
+    .step-btn {
+        font-size: 1.2em;
+    }
+}
+
+span {
+    color: var(--accent-dark);
+    font-weight: 900;
+}
