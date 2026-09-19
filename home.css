@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    gap: 1em;
+    gap: 0.5em;
 }
 
     .post img {
@@ -40,6 +40,7 @@ main {
         font-weight: 700;
         font-size: 1.5em;
         color: var(--accent);
+        margin-top: 0.2em;
     }
 
     .post-description {
@@ -63,7 +64,7 @@ main {
     }
 
     .post-title {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .post-description {
