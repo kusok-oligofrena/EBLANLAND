@@ -1,0 +1,46 @@
+:root {
+    --accent: rgb(125, 160, 65);
+    --accent-dark: rgb(95, 125, 45);
+    --accent-bg: rgb(43, 51, 32);
+    --accent-very-dark: rgb(38, 48, 20);
+    --text: rgb(207, 209, 190);
+    --text-dark: rgb(20, 22, 17);
+    --bg: rgb(62, 66, 53);
+    --bg-dark: rgb(52, 57, 44);
+    --container: rgb(46, 50, 40);
+    --container-dark: rgb(39, 43, 34);
+}
+
+.post {
+    line-height: 1.5;
+}
+
+    .cold-war .post-title {
+            color: var(--status-cold-war);
+        }
+
+    .cold-war {
+            border-top: 3px solid var(--status-cold-war);
+        }
+
+    .hot-war .post-title {
+        color: var(--status-hot-war);
+    }
+
+    .hot-war {
+        border-top: 3px solid var(--status-hot-war);
+    }
+
+    .total-war .post-title {
+        color: var(--status-total-war);
+    }
+
+    .total-war {
+        border-top: 3px solid var(--status-total-war);
+    }
+    
+/*
+--status-peace: rgb(100, 165, 90);
+--status-cold-war: rgb(70, 130, 180);
+--status-hot-war: rgb(210, 115, 40);
+--status-total-war: rgb(195, 55, 45);

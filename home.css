@@ -1,14 +1,16 @@
-/*
-    Цвета которые я выбирал под мефедроном:
-    --accent: rgb(240, 165, 0);
-    --accent-dark: rgb(191, 131, 0);
-    --text: rgb(211, 211, 211);
-    --text-dark: rgb(21, 21, 21);
-    --bg: rgb(67, 67, 67);
-    --bg-dark: rgb(57, 57, 57);
-    --container: rgb(50, 50, 50);
-    --container-dark: rgb(43, 43, 43);
-*/
+:root {
+/* Мир */
+--status-peace: rgb(100, 180, 90);
+
+/* Холодная война */
+--status-cold-war: rgb(70, 145, 200);
+
+/* Горячая война */
+--status-hot-war: rgb(220, 120, 40);
+
+/* Полномасштабная война */
+--status-total-war: rgb(210, 55, 45);
+}
 
 main {
     display: flex;
@@ -21,15 +23,16 @@ main {
 
 .post {
     text-decoration: none;
+    width: 100%;
     background-color: var(--container-dark);
-    width: 80%;
     border-top: 3px solid var(--accent);
     padding: 1.5em;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    gap: 0.5em;
+    gap: 1em;
 }
 
     .post img {
@@ -40,13 +43,30 @@ main {
         font-weight: 700;
         font-size: 1.5em;
         color: var(--accent);
-        margin-top: 0.2em;
+        text-align: center;
     }
 
     .post-description {
         color: var(--text);
-        font-size: 1.3em;
+        font-size: 1.15em;
         font-weight: 400;
+        max-width: 90%;
+        align-self: center;
+        margin-top: -0.5em;
+    }
+
+    .pinned {
+        width: 100%;
+    }
+
+    .pinned .post-title{
+        color: var(--status-cold-war);
+    }
+    
+    .pinned .post-description {
+        font-size: 1.3em;
+        max-width: 100%;
+        margin-top: 0;
     }
 
 /*
@@ -68,7 +88,8 @@ main {
     }
 
     .post-description {
-        font-size: 1.1em
+        font-size: 1.1em;
+        max-width: 100%;
     }
 }
 
