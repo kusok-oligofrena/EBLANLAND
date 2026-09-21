@@ -57,11 +57,11 @@ main {
 
     .pinned {
         width: 100%;
-        border-top: 3px solid var(--status-cold-war);
+        border-top: 3px solid var(--status-peace);
     }
 
     .pinned .post-title{
-        color: var(--status-cold-war);
+        color: var(--status-status-peace);
     }
     
     .pinned .post-description {
