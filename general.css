@@ -89,6 +89,11 @@ main {
     margin-bottom: 2em;
 }
 
+span {
+    color: var(--accent-dark);
+    font-weight: 900;
+}
+
 /*
     С айфона сайт не смотреть сука!!!
 */
