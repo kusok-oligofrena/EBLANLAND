@@ -61,7 +61,7 @@ main {
     }
 
     .pinned .post-title{
-        color: var(--status-status-peace);
+        color: var(--status-peace);
     }
     
     .pinned .post-description {
